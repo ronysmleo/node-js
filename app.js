@@ -38,24 +38,6 @@
 
 // callFuntion(myName)
 
-//Modules and require()
-// var counter = require('./count')
-
-// console.log(counter(['Shubhan', 'Sabbir', 'khalid']));
-
-// #07 different Module Patterns
-
-var stuff = require('./stuff')
-
-console.log(stuff.adder(5,6));
-console.log(stuff.names(['rony', 'jeny', 'jony']));
-console.log(stuff.adder(stuff.pi,6));
-
-
-
-
-
-
 
 
 
