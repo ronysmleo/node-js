@@ -38,6 +38,11 @@
 
 // callFuntion(myName)
 
+var stuff = require('./stuff')
+
+console.log(stuff.adder(5,6))
+console.log(stuff.names(['Shubhan', 'Christan', 'Khalid']))
+console.log(stuff.adder(stuff.pi,6))
 
 
 
