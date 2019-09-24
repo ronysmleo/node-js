@@ -27,13 +27,16 @@
 // name()
 
 //Example 02
-var nickName = 'Rony'
-function callFuntion(name) {
-    name();
-}
+// var nickName = 'Rony'
+// function callFuntion(name) {
+//     name();
+// }
 
-var myName = function () {
-    console.log(`My name is ${nickName}`)
-}
+// var myName = function () {
+//     console.log(`My name is ${nickName}`)
+// }
 
-callFuntion(myName)
+// callFuntion(myName)
+
+//Modules and require()
+
