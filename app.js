@@ -39,4 +39,6 @@
 // callFuntion(myName)
 
 //Modules and require()
+var counter = require('./count')
 
+console.log(counter(['Shubhan', 'Sabbir', 'khalid']));

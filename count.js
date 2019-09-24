@@ -1,5 +1,7 @@
-var counter =function (arr) {
-    return `there are ${arr.length} elements in this array`
-}
+ 
+ 
+ var counter = function (arr) {
+     return `there are ${arr.length} names here`
+ }
 
-console.log(counter(['Rony', 'Jony', 'Jeny']));
+ module.exports=counter;
