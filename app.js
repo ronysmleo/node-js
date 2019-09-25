@@ -27,12 +27,10 @@
 // name()
 
 //Example 02
-<<<<<<< Updated upstream
-var nickName = 'Rony'
-function callFuntion(name) {
-    name();
-}
-=======
+
+// var nickName = 'Rony'
+// function callFuntion(name) {
+//     name();
 // var nickName = 'Rony'
 // function callFuntion(name) {
 //     name();
