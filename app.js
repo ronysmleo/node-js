@@ -83,9 +83,9 @@ people.forEach(function (person) {
     })
 })
 
-James.emit('speak', 'hey dudes')
-Mary.emit('speak', 'I want some food')
-James.emit('speak', 'I got you')
+James.emit('speak', 'hey dudes');
+Mary.emit('speak', 'I want some food');
+James.emit('speak', 'I got you');
 
 
 
