@@ -27,10 +27,113 @@
 // name()
 
 //Example 02
+<<<<<<< Updated upstream
 var nickName = 'Rony'
 function callFuntion(name) {
     name();
 }
+=======
+// var nickName = 'Rony'
+// function callFuntion(name) {
+//     name();
+// }
+
+// var myName = function () {
+//     console.log(`My name is ${nickName}`)
+// }
+
+// callFuntion(myName)
+
+// var stuff = require('./stuff')
+
+// console.log(stuff.adder(5,6))
+// console.log(stuff.names(['Shubhan', 'Christan', 'Khalid']))
+// console.log(stuff.adder(stuff.pi,6))
+
+//***********EVENTS Formula */
+// var events = require('events');
+// var myEmmitter01 = new events.EventEmitter(); //created custom events
+
+// myEmmitter01.on('someEvent', function (mssg) {
+//     console.log(mssg)
+// })
+
+// myEmmitter01.emit('someEvent', `The event was emmitted`)
+// *******************************************************************************************************
+//Example of Events
+var events = require('events');
+var util = require('util')
+ 
+var Person =function (name) {
+    this.name =name;
+};
+
+
+util.inherits(Person, events.EventEmitter)
+
+
+var James = new Person('James')
+var Mary = new Person('Mary')
+var Ryu = new Person('Ryu')
+
+var people= [James, Mary, Ryu]
+
+people.forEach(function (person) {
+    person.on('speak', function (mssg) {
+        console.log(person.name + ' said ' + mssg)
+
+    })
+})
+
+James.emit('speak', 'hey dudes')
+Mary.emit('speak', 'I want some food')
+James.emit('speak', 'I got you')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> Stashed changes
 
 var myName = function () {
     console.log(`My name is ${nickName}`)
