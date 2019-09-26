@@ -59,33 +59,32 @@
 // myEmmitter01.emit('someEvent', `The event was emmitted`)
 // *******************************************************************************************************
 //Example of Events
-var events = require('events');
-var util = require('util')
- 
-var Person =function (name) {
-    this.name =name;
-};
 
+var events = require('events');
+var util = require('util');
+
+
+var Person =function (name) {
+    this.name=name
+}
 
 util.inherits(Person, events.EventEmitter)
 
+var Gopal = new Person('Gopal')
+var Dipali = new Person('Diplai')
+var Jony = new Person('Jony')
+var Rony = new Person('Rony')
+var Jeni = new Person('Jeni')
 
-var James = new Person('James')
-var Mary = new Person('Mary')
-var Ryu = new Person('Ryu')
+var family =[Gopal, Dipali, Jony, Rony, Jeni]
 
-var people= [James, Mary, Ryu]
-
-people.forEach(function (person) {
-    person.on('speak', function (mssg) {
-        console.log(person.name + ' said ' + mssg)
-
+family.forEach(function (person) {
+    person.on('look', function (text) {
+        console.log(person.name+ ' call ' + text)
     })
 })
 
-James.emit('speak', 'hey dudes');
-Mary.emit('speak', 'I want some food');
-James.emit('speak', 'I got you');
+Gopal.emit('look', 'please come here')
 
 
 
@@ -118,23 +117,3 @@ James.emit('speak', 'I got you');
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> Stashed changes
-
-var myName = function () {
-    console.log(`My name is ${nickName}`)
-}
-
-callFuntion(myName)
